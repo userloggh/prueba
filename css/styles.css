@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+body {
+font-family : 'Montserrat', sans-serif;
+font-size : 1rem;
+width : 100%;
+height : 100%;
+}
+#contenedor {
+position : absolute;
+top : 0;
+bottom : 0;
+width : 100%;
+}
+#reclamo, #menu_de_trabajos {
+position : absolute;
+width : 100%;
+height : 100%;
+min-height : 100%;
+}
+#portrait {
+position : absolute;
+width : 65%;
+height : 100%;
+top : 0;
+left : 35%;
+background-image : url(../images/fondo_cv_lg.jpg);
+background-position : top right;
+background-size : cover;
+background-repeat : no-repeat;
+background-color : white;
+}
+#titulo_nombre {
+width : 35%;
+height : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+padding : 4rem;
+}
+.centrado {
+position : relative;
+top : 50%;
+transform : translateY(-50%);
+text-align : center;
+}
+#mas-info {
+position : absolute;
+bottom : 1%;
+width : 100%;
+text-align : center;
+}
+#menu_de_trabajos {
+top : 100%;
+background-color : black;
+color : white;
+}
+.enlaces_trabajos {
+height : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+align-items : center;
+}
+div.enlaces_trabajos h1 {
+font-size : 6rem;
+}
+footer#mas-info a:link, footer#mas-info a:hover, footer#mas-info a:visited, footer#mas-info a:active {
+color : black;
+}
+footer#mas-info i {
+font-size : 2rem;
+}
+a:link, a:hover, a:visited, a:active {
+color : white;
+}
+h1 {
+font-size : 4rem;
+margin-bottom : 2rem;
+text-transform : uppercase;
+}
+h1#logo {
+font-size : 4rem;
+}
+h2 {
+font-size : 1.5rem;
+text-transform : uppercase;
+text-align : center;
+margin-bottom : 2rem;
+}
+article#reclamo section#titulo_nombre h3 {
+align-self : flex-start;
+border-bottom : 2px solid black;
+}
+h3 {
+text-transform : uppercase;
+display : inline-block;
+border-bottom : 2px solid white;
+padding-bottom : 0.25rem;
+margin-bottom : 0.5rem;
+}
+h4 {
+text-align : center;
+text-transform : uppercase;
+margin-bottom : 2rem;
+color : red;
+}
+h5 {
+text-transform : uppercase;
+margin-bottom : 1.5rem;
+}
+ul {
+line-height : 2rem;
+list-style-position : inside;
+}
+p.titulo {
+font-size : 3rem;
+line-height : 4rem;
+}
+p.texto {
+font-weight : 400;
+line-height : 2rem;
+margin-bottom : 2rem;
+}
+img {
+display : block;
+width : 100%;
+max-width : 100%;
+height : auto;
+}
+article#menu_trabajos {
+position : fixed;
+background-color : black;
+color : white;
+width : 100vw;
+height : 100vh;
+display : flex;
+align-content : center;
+justify-content : space-around;
+}
+.item_menu_trabajos {
+align-self : center;
+padding-top : 100%;
+padding-bottom : 100%;
+}
+@media screen and (min-width:992px) {
+header#titulo {
+z-index : 200;
+position : fixed;
+width : 35%;
+height : 100%;
+top : 0;
+left : 0;
+display : flex;
+flex-direction : column;
+justify-content : center;
+padding : 4rem;
+}
+.contenidoflex {
+position : absolute;
+}
+.item {
+align-self : stretch;
+}
+header.bloqueIzq {
+background-color : black;
+color : white;
+}
+nav.nav-principal {
+position : absolute;
+bottom : 4rem;
+left : 4rem;
+right : 0;
+}
+nav.nav-principal ul {
+list-style : none;
+display : block;
+}
+nav.nav-principal li {
+display : inline-block;
+}
+nav.nav-principal li:before {
+content : '/';
+padding : 0 12px 0 9px;
+}
+nav.nav-principal li:first-child:before {
+display : none;
+}
+nav.nav-principal a {
+text-transform : uppercase;
+text-decoration : none;
+color : white;
+}
+section#contenido {
+position : relative;
+width : 65%;
+left : 35%;
+z-index : 100;
+background-color : white;
+padding : 4rem;
+}
+section#contenido h3 {
+display : block;
+text-align : center;
+margin-bottom : 0;
+}
+section#contenido ul li {
+margin-bottom : 1rem;
+}
+section#contenido ul li:last-child {
+margin-bottom : 0;
+}
+section#img_trabajos {
+position : relative;
+width : 65%;
+left : 35%;
+z-index : 300;
+background-color : #efefef;
+padding : 4rem;
+}
+section#img_trabajos h5 {
+text-align : center;
+color : red;
+}
+section#img_trabajos div:nth-child(3) h5 {
+padding-top : 2rem;
+}
+footer.oculto {
+display : none;
+}
+}
+@media screen and (max-width:991px) {
+#titulo_nombre {
+width : 100%;
+height : auto;
+display : flex;
+flex-direction : column;
+justify-content : center;
+padding : 4rem;
+}
+#portrait {
+position : relative;
+width : 100%;
+left : 0;
+background-image : url(../images/fondo_cv_small.jpg);
+background-position : top right;
+background-size : cover;
+background-repeat : no-repeat;
+background-color : white;
+}
+article#principal {
+position : relative;
+z-index : 200;
+background-color : black;
+}
+header#titulo.bloqueIzq {
+z-index : 200;
+height : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+padding : 4rem;
+}
+header.bloqueIzq {
+background-color : black;
+color : white;
+}
+nav.nav-principal {
+display : none;
+}
+section#contenido {
+position : relative;
+z-index : 100;
+background-color : white;
+padding : 4rem;
+}
+section#contenido h3 {
+display : block;
+text-align : center;
+margin-bottom : 0;
+}
+section#contenido ul li {
+margin-bottom : 1rem;
+}
+section#contenido ul li:last-child {
+margin-bottom : 0;
+}
+section#img_trabajos {
+position : relative;
+z-index : 300;
+background-color : #efefef;
+padding : 2rem;
+}
+section#img_trabajos h5 {
+padding-top : 2rem;
+text-align : center;
+color : red;
+}
+section#img_trabajos div:nth-child(3) h5 {
+padding-top : 2rem;
+}
+footer.visible {
+display : block;
+z-index : 800;
+background-color : black;
+}
+nav#nav-secundario {
+padding : 2rem 4rem;
+}
+nav#nav-secundario ul.menu-secundario {
+list-style : none;
+display : block;
+}
+nav#nav-secundario ul.menu-secundario li {
+display : inline-block;
+}
+nav#nav-secundario ul.menu-secundario li:before {
+content : '/';
+padding : 0 12px 0 9px;
+color : white;
+}
+nav#nav-secundario ul.menu-secundario li:first-child:before {
+display : none;
+}
+nav#nav-secundario ul.menu-secundario a {
+text-transform : uppercase;
+text-decoration : none;
+color : white;
+}
+}
+@media screen and (max-width:450px) {
+section#titulo_nombre {
+padding : 2rem;
+}
+article#menu_de_trabajos h1 {
+font-size : 3rem;
+}
+p.texto, ul {
+line-height : 1.5rem;
+}
+header#titulo.bloqueIzq {
+padding : 2rem;
+}
+section#contenido {
+padding : 2rem;
+}
+section#img_trabajos {
+padding : 1rem;
+}
+nav#nav-secundario {
+padding : 2rem;
+}
+}
+@media screen and (max-height:765px) and (orientation:landscape) {
+#contenedor {
+position : absolute;
+top : 0;
+bottom : 0;
+width : 100%;
+}
+#reclamo, #menu_de_trabajos {
+position : absolute;
+width : 100%;
+height : 100%;
+min-height : 100%;
+}
+#portrait {
+position : absolute;
+width : 65%;
+height : 100%;
+top : 0;
+left : 35%;
+background-image : url(../images/fondo_cv_small.jpg);
+background-position : top right;
+background-size : cover;
+background-repeat : no-repeat;
+background-color : white;
+}
+#titulo_nombre {
+width : 35%;
+height : 100%;
+display : flex;
+flex-direction : column;
+justify-content : center;
+padding : 4rem;
+}
+article#menu_de_trabajos h1 {
+font-size : 2rem;
+margin-bottom : 1rem;
+}
+}
